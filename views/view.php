@@ -9,7 +9,7 @@
     <h1>Trouve le mot en moins de <?= MAX_TRIALS; ?> coups !</h1>
 </div>
 <div>
-    <p>Le mot à deviner compte <?= $wordLenth; ?> lettres&nbsp;: <?= $replacementString; ?></p>
+    <p>Le mot à deviner compte <?= $wordLenth; ?> lettres&nbsp;: <?= $replacementString; ?> - <?= $word; ?></p> 
 </div>
 <div>
     <img src="images/pendu<?= $trials; ?>.gif"
@@ -55,7 +55,7 @@
                             <?php endif; ?>
                         <?php endforeach; ?>
                 </select>
-                <input type="hidden"
+<!--                 <input type="hidden"
                        name="serializedLetters"
                        value="<?= $serializedLetters; ?>">
                 <input type="hidden"
@@ -72,7 +72,7 @@
                        value="9">
                 <input type="hidden"
                        name="trials"
-                       value="<?= $trials; ?>">
+                       value="<?= $trials; ?>"> -->
                 <input type="submit"
                        value="essayer cette lettre">
             </div>

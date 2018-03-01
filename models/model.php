@@ -58,9 +58,13 @@ function getReplacementString($wordLenth)
 	return str_pad('', $wordLenth, REPLACEMENT_CHAR);
 }
 
+function encode($toEncode){
+      return base64_encode(json_encode($toEncode));
+}
 
-
-
+function decode($toDecode){
+      return json_decode(base64_decode($toDecode),true);
+}
 
 
 
